@@ -1,0 +1,35 @@
+﻿syntax = "proto3";
+
+package repository.ranking;
+
+option go_package = "github.com/Suinar/Bank-proto/proto/repository/exchange-ranking";
+
+import "google/protobuf/timestamp.proto";
+
+service RankingRepository {
+  rpc GetRelativeRanking(GetRelativeRankingRequest) returns (RankingList);
+  rpc GetAllRanking(GetAllRankingRequest) returns (RankingList);
+}
+
+message Ranking {
+  int64 currency_id_from = 1;
+  int64 currency_id_to = 2;
+  google.protobuf.Timestamp date = 3;
+
+  int32 rate_sell = 4;
+  int32 rate_buy = 5;
+  int32 rate_cross = 6;
+}
+
+message RankingList {
+  repeated Ranking rankings = 1;
+}
+
+message GetRelativeRankingRequest {
+  int64 currency_id_from = 1;
+  int64 currency_id_to = 2;
+}
+
+message GetAllRankingRequest {
+  int64 currency_id_from = 1;
+}
