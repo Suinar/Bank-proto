@@ -2,7 +2,7 @@
 // versions:
 // - protoc-gen-go-grpc v1.6.2
 // - protoc             v4.25.9
-// source: exchange-rate/exchange-rate.proto
+// source: exchange_rate/exchange_rate.proto
 
 package exchange_ranking
 
@@ -155,5 +155,5 @@ var RankingRepository_ServiceDesc = grpc.ServiceDesc{
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
-	Metadata: "exchange-rate/exchange-rate.proto",
+	Metadata: "exchange_rate/exchange_rate.proto",
 }

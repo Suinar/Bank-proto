@@ -2,7 +2,7 @@
 // versions:
 // 	protoc-gen-go v1.33.0
 // 	protoc        v4.25.9
-// source: exchange-rate/exchange-rate.proto
+// source: exchange_rate/exchange_rate.proto
 
 package exchange_ranking
 
