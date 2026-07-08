@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package repository.account;
 
-option go_package = "github.com/Suinar/github.com/Suinar/Bank-proto/repository/account";
+option go_package = "github.com/Suinar/Bank-proto/repository/account";
 
 import "repository/common/common.proto";
 
