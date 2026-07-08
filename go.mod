@@ -1,4 +1,4 @@
-module Bank-proto
+module github.com/Suinar/Bank-proto
 
 go 1.25.0
 

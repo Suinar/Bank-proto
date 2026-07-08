@@ -1,8 +1,8 @@
-﻿syntax = "proto3";
+syntax = "proto3";
 
 package repository.user;
 
-option go_package = "github.com/Suinar/Bank-proto/repository/user";
+option go_package = "github.com/Suinar/github.com/Suinar/Bank-proto/repository/user";
 
 import "repository/common/common.proto";
 
