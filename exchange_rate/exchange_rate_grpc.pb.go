@@ -27,7 +27,7 @@ const (
 //
 // For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/google.golang.org/grpc/?tab=doc#ClientConn.NewStream.
 type RankingRepositoryClient interface {
-	GetRelativeRanking(ctx context.Context, in *GetRelativeRankingRequest, opts ...grpc.CallOption) (*RankingList, error)
+	GetRelativeRanking(ctx context.Context, in *GetRelativeRankingRequest, opts ...grpc.CallOption) (*Ranking, error)
 	GetAllRanking(ctx context.Context, in *GetAllRankingRequest, opts ...grpc.CallOption) (*RankingList, error)
 }
 
@@ -39,9 +39,9 @@ func NewRankingRepositoryClient(cc grpc.ClientConnInterface) RankingRepositoryCl
 	return &rankingRepositoryClient{cc}
 }
 
-func (c *rankingRepositoryClient) GetRelativeRanking(ctx context.Context, in *GetRelativeRankingRequest, opts ...grpc.CallOption) (*RankingList, error) {
+func (c *rankingRepositoryClient) GetRelativeRanking(ctx context.Context, in *GetRelativeRankingRequest, opts ...grpc.CallOption) (*Ranking, error) {
 	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(RankingList)
+	out := new(Ranking)
 	err := c.cc.Invoke(ctx, RankingRepository_GetRelativeRanking_FullMethodName, in, out, cOpts...)
 	if err != nil {
 		return nil, err
@@ -63,7 +63,7 @@ func (c *rankingRepositoryClient) GetAllRanking(ctx context.Context, in *GetAllR
 // All implementations must embed UnimplementedRankingRepositoryServer
 // for forward compatibility.
 type RankingRepositoryServer interface {
-	GetRelativeRanking(context.Context, *GetRelativeRankingRequest) (*RankingList, error)
+	GetRelativeRanking(context.Context, *GetRelativeRankingRequest) (*Ranking, error)
 	GetAllRanking(context.Context, *GetAllRankingRequest) (*RankingList, error)
 	mustEmbedUnimplementedRankingRepositoryServer()
 }
@@ -75,7 +75,7 @@ type RankingRepositoryServer interface {
 // pointer dereference when methods are called.
 type UnimplementedRankingRepositoryServer struct{}
 
-func (UnimplementedRankingRepositoryServer) GetRelativeRanking(context.Context, *GetRelativeRankingRequest) (*RankingList, error) {
+func (UnimplementedRankingRepositoryServer) GetRelativeRanking(context.Context, *GetRelativeRankingRequest) (*Ranking, error) {
 	return nil, status.Error(codes.Unimplemented, "method GetRelativeRanking not implemented")
 }
 func (UnimplementedRankingRepositoryServer) GetAllRanking(context.Context, *GetAllRankingRequest) (*RankingList, error) {

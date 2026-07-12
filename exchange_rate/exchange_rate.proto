@@ -7,7 +7,7 @@ option go_package = "github.com/Suinar/Bank-proto/proto/repository/exchange-rank
 import "google/protobuf/timestamp.proto";
 
 service RankingRepository {
-  rpc GetRelativeRanking(GetRelativeRankingRequest) returns (RankingList);
+  rpc GetRelativeRanking(GetRelativeRankingRequest) returns (Ranking);
   rpc GetAllRanking(GetAllRankingRequest) returns (RankingList);
 }
 
