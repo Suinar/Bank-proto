@@ -16,9 +16,9 @@ message Ranking {
   int64 currency_id_to = 2;
   google.protobuf.Timestamp date = 3;
 
-  int32 rate_sell = 4;
-  int32 rate_buy = 5;
-  int32 rate_cross = 6;
+  double rate_sell = 4;
+  double rate_buy = 5;
+  double rate_cross = 6;
 }
 
 message RankingList {
