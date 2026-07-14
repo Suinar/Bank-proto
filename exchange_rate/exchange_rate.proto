@@ -12,14 +12,14 @@ service RankingRepository {
 }
 
 message Ranking {
-  int64 currency_iso_from = 1;
-  int64 currency_iso_to = 2;
+  int32 currency_iso_from = 1;
+  int32 currency_iso_to = 2;
 
   google.protobuf.Timestamp date = 3;
 
-  double rate_sell = 4;
-  double rate_buy = 5;
-  double rate_cross = 6;
+  float rate_sell = 4;
+  float rate_buy = 5;
+  float rate_cross = 6;
 }
 
 message RankingList {
@@ -27,10 +27,10 @@ message RankingList {
 }
 
 message GetRelativeRankingRequest {
-  int64 currency_iso_from = 1;
-  int64 currency_iso_to = 2;
+  int32 currency_iso_from = 1;
+  int32 currency_iso_to = 2;
 }
 
 message GetAllRankingRequest {
-  int64 currency_iso_from = 1;
+  int32 currency_iso_from = 1;
 }
