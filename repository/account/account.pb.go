@@ -7,7 +7,7 @@
 package account
 
 import (
-	common "github.com/Suinar/Bank-proto/repository/common"
+	common "github.com/kVinsom/Bank-proto/repository/common"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"

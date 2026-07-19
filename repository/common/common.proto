@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package repository.common;
 
-option go_package = "github.com/Suinar/Bank-proto/repository/common";
+option go_package = "github.com/kVinsom/Bank-proto/repository/common";
 
 message Empty {}
 

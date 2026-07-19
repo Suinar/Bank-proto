@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package repository.deposit;
 
-option go_package = "github.com/Suinar/github.com/Suinar/Bank-proto/repository/deposit";
+option go_package = "github.com/kVinsom/github.com/kVinsom/Bank-proto/repository/deposit";
 
 import "repository/common/common.proto";
 

@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package repository.currency;
 
-option go_package = "github.com/Suinar/Bank-proto/repository/currency";
+option go_package = "github.com/kVinsom/Bank-proto/repository/currency";
 
 import "repository/common/common.proto";
 

@@ -48,8 +48,8 @@ This repository is shared between the following microservices:
 
 | Service | Description |
 |---------|-------------|
-| [Bank-repository-service](https://github.com/Suinar/Bank-repository-service) | Repository microservice responsible for database operations |
-| [Bank-exchange-rate-service](https://github.com/Suinar/Bank-exchange-rate-service) | Exchange rate microservice responsible for currency rankings |
+| [Bank-repository-service](https://github.com/kVinsom/Bank-repository-service) | Repository microservice responsible for database operations |
+| [Bank-exchange-rate-service](https://github.com/kVinsom/Bank-exchange-rate-service) | Exchange rate microservice responsible for currency rankings |
 
 ---
 
@@ -171,7 +171,7 @@ Shared message used across multiple services.
 Install the module in your Go project.
 
 ```bash
-go get github.com/Suinar/Bank-proto@latest
+go get github.com/kVinsom/Bank-proto@latest
 ```
 
 ---
