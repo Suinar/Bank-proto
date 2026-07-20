@@ -63,6 +63,9 @@ service UserRepository {
   rpc Create(User)
       returns (User);
 
+  rpc ChangePassword(ChangePasswordRequest)
+      returns (User);
+
   rpc Update(UpdateUserRequest)
       returns (User);
 
