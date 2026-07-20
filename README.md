@@ -67,6 +67,7 @@ The following services are provided by **Bank-repository-service**.
 | GetByPhoneNumber | Finds user by phone number |
 | Create | Creates a new user |
 | Update | Updates user information |
+| ChangePassword | Change user password by id |
 | Delete | Deletes a user |
 
 ---
